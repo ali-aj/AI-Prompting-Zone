@@ -31,7 +31,16 @@ class AgentChatService {
       });
 
       if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+        let errorMessage = `HTTP error! status: ${response.status}`;
+        try {
+          const errorData = await response.json();
+          if (errorData.error) {
+            errorMessage = errorData.error;
+          }
+        } catch (e) {
+          // Ignore if can't parse JSON
+        }
+        throw new Error(errorMessage);
       }
 
       return await response.json();
@@ -48,7 +57,16 @@ class AgentChatService {
       });
 
       if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+        let errorMessage = `HTTP error! status: ${response.status}`;
+        try {
+          const errorData = await response.json();
+          if (errorData.error) {
+            errorMessage = errorData.error;
+          }
+        } catch (e) {
+          // Ignore if can't parse JSON
+        }
+        throw new Error(errorMessage);
       }
 
       const data = await response.json();
@@ -67,7 +85,16 @@ class AgentChatService {
       });
 
       if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+        let errorMessage = `HTTP error! status: ${response.status}`;
+        try {
+          const errorData = await response.json();
+          if (errorData.error) {
+            errorMessage = errorData.error;
+          }
+        } catch (e) {
+          // Ignore if can't parse JSON
+        }
+        throw new Error(errorMessage);
       }
 
       return await response.json();
@@ -85,7 +112,16 @@ class AgentChatService {
       });
 
       if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+        let errorMessage = `HTTP error! status: ${response.status}`;
+        try {
+          const errorData = await response.json();
+          if (errorData.error) {
+            errorMessage = errorData.error;
+          }
+        } catch (e) {
+          // Ignore if can't parse JSON
+        }
+        throw new Error(errorMessage);
       }
     } catch (error) {
       console.error('Error clearing chat history:', error);
@@ -102,7 +138,16 @@ class AgentChatService {
       });
 
       if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+        let errorMessage = `HTTP error! status: ${response.status}`;
+        try {
+          const errorData = await response.json();
+          if (errorData.error) {
+            errorMessage = errorData.error;
+          }
+        } catch (e) {
+          // Ignore if can't parse JSON
+        }
+        throw new Error(errorMessage);
       }
 
       console.log(`Voice message saved: ${role} - ${content.substring(0, 50)}...`);

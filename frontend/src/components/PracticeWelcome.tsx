@@ -16,6 +16,7 @@ import { useAuth } from "../context/AuthContext";
 import { useVoiceChat } from "@/context/VoiceChatContext";
 import PracticeSidebar from "./PracticeSidebar";
 import MainChatArea from "./MainChatArea";
+import { toast } from "sonner";
 
 interface Agent {
   _id: string
@@ -139,6 +140,12 @@ const PracticeWelcome = () => {
       }
     } catch (error) {
       console.error("Error loading chat history:", error);
+      if (error instanceof Error && error.message === "Not authorized") {
+        toast.error("Session expired. Please sign in again.")
+        logout()
+        navigate("/student/signin")
+        return
+      }
       setMessages([]);
     } finally {
       setIsLoading(false);
@@ -226,6 +233,12 @@ const PracticeWelcome = () => {
       }
     } catch (error) {
       console.error("Error sending message:", error);
+      if (error instanceof Error && error.message === "Not authorized") {
+        toast.error("Session expired. Please sign in again.")
+        logout()
+        navigate("/student/signin")
+        return
+      }
       setMessages((prev) => [
         ...prev,
         {
@@ -258,6 +271,12 @@ const PracticeWelcome = () => {
       setShowClearConfirm(false);
     } catch (error) {
       console.error("Error clearing chat:", error);
+      if (error instanceof Error && error.message === "Not authorized") {
+        toast.error("Session expired. Please sign in again.")
+        logout()
+        navigate("/student/signin")
+        return
+      }
     }
   }, [selectedAgent]);
 
@@ -297,6 +316,12 @@ const PracticeWelcome = () => {
       }
     } catch (error) {
       console.error("Error sending message:", error);
+      if (error instanceof Error && error.message === "Not authorized") {
+        toast.error("Session expired. Please sign in again.")
+        logout()
+        navigate("/student/signin")
+        return
+      }
       setMessages((prev) => [
         ...prev,
         {

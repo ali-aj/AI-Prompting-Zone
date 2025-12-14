@@ -10,6 +10,8 @@ import { format } from "date-fns"
 import { Smile, Send, Trash2, User, Bot, Copy, Check, ChevronDown, ChevronUp, Trophy, Sparkles, Mic } from "lucide-react"
 import { toast } from "sonner"
 import { useVoiceChat } from "@/context/VoiceChatContext"
+import { useAuth } from "@/context/AuthContext"
+import { useNavigate } from "react-router-dom"
 
 interface AgentChatProps {
   onClose: () => void
@@ -283,6 +285,9 @@ const AgentChat: React.FC<AgentChatProps> = ({ onClose, agentId, initialPrompt }
   const messagesEndRef = useRef<HTMLDivElement>(null)
   const isInitialPromptHandled = useRef(false)
 
+  const { logout } = useAuth()
+  const navigate = useNavigate()
+
   // New state for level progression
   const [levelInfo, setLevelInfo] = useState<LevelInfo>({
     currentLevel: 'Starter',
@@ -430,6 +435,12 @@ const AgentChat: React.FC<AgentChatProps> = ({ onClose, agentId, initialPrompt }
       }
     } catch (error) {
       console.error("Error loading chat history:", error)
+      if (error instanceof Error && error.message === "Not authorized") {
+        toast.error("Session expired. Please sign in again.")
+        logout()
+        navigate("/student/signin")
+        return
+      }
       setMessages([])
     }
   }
@@ -512,6 +523,12 @@ const AgentChat: React.FC<AgentChatProps> = ({ onClose, agentId, initialPrompt }
 
     } catch (error) {
       console.error("Error sending message:", error)
+      if (error instanceof Error && error.message === "Not authorized") {
+        toast.error("Session expired. Please sign in again.")
+        logout()
+        navigate("/student/signin")
+        return
+      }
       setMessages((prev) => [
         ...prev,
         {
