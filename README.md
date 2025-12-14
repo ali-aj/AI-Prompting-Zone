@@ -72,7 +72,7 @@ Kids-Stem-Zone/
 
 3. **Run the backend server:**
    ```bash
-   nodemon server.js
+   npm run dev
    ```
    The backend will start on the port specified in your `.env` (default: 5000).
 
@@ -91,55 +91,5 @@ Kids-Stem-Zone/
    npm run dev
    ```
    The frontend will start on [http://localhost:8080](http://localhost:8080) by default.
-
----
-
-## Environment Variables
-
-### Backend (`backend/.env`)
-
-```env
-PORT=5000
-
-MONGODB_URI=
-JWT_SECRET=
-
-OPENAI_API_KEY=
-OPENAI_MODEL=
-
-CLAUDE_API_KEY=
-CLAUDE_MODEL=
-
-GEMINI_API_KEY=
-GEMINI_MODEL=
-
-EMAIL_HOST=smtp.gmail.com
-EMAIL_PORT=587
-EMAIL_USERNAME=
-EMAIL_PASSWORD=
-EMAIL_FROM=
-
-CLOUDINARY_CLOUD_NAME=
-CLOUDINARY_API_KEY=
-CLOUDINARY_API_SECRET=
-```
-
-### Frontend
-
-- If you need to use environment variables, create a `.env` file in the `frontend` directory and prefix variables with `VITE_`.
-
----
-
-## Scripts
-
-### Backend
-
-- `nodemon server.js` — Start the server
-
-### Frontend
-
-- `npm run dev` — Start the Vite development server
-- `npm run build` — Build for production
-- `npm run preview` — Preview the production build
 
 ---
