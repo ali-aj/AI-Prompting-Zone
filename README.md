@@ -4,21 +4,6 @@ A full-stack web application designed to provide engaging STEM activities and re
 
 ---
 
-## Table of Contents
-
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-  - [Backend Setup](#backend-setup)
-  - [Frontend Setup](#frontend-setup)
-- [Environment Variables](#environment-variables)
-- [Scripts](#scripts)
-- [Contributing](#contributing)
-- [License](#license)
-
----
-
 ## Features
 
 - User authentication (students, admins, agents, clubs)
