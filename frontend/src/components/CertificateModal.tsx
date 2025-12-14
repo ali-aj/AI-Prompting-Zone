@@ -121,11 +121,11 @@ const CertificateModal: React.FC<CertificateModalProps> = ({ open, onOpenChange,
                   <p className="text-xs md:text-sm text-gray-500 text-center">Completion Date</p>
                 </div>
                 <div className="flex flex-col items-center w-1/3">
-                  <img src="/logo.png" alt="TrainingX.AI Logo" className="h-12 w-auto mb-2" />
-                  <span className="text-xs text-gray-500">TrainingX.AI</span>
+                  <img src="/logo.png" alt="Prompting.AI Logo" className="h-12 w-auto mb-2" />
+                  <span className="text-xs text-gray-500">Prompting.AI</span>
                 </div>
                 <div className="flex flex-col items-center w-1/3">
-                  <span className="font-semibold text-lg text-gray-800">Derrick O'Neal</span>
+                  <span className="font-semibold text-lg text-gray-800">Ali Mustafa</span>
                   <div className="w-32 h-0.5 bg-gray-400 mb-2 mt-1" />
                   <p className="text-xs md:text-sm text-gray-500 text-center">Instructor Signature</p>
                 </div>

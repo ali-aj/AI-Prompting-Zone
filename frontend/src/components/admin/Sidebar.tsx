@@ -36,7 +36,7 @@ const Sidebar = ({ activeTab, setActiveTab }: SidebarProps) => {
             <span className="text-white font-bold text-sm">TX</span>
           </div>
           <div>
-            <h1 className="text-lg font-bold text-gray-900">TrainingX.AI</h1>
+            <h1 className="text-lg font-bold text-gray-900">Prompting.AI</h1>
             <p className="text-xs text-gray-500">Super Admin Dashboard</p>
           </div>
         </div>

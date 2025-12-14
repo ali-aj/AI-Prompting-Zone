@@ -8,7 +8,7 @@ const AboutSection: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            Why TrainingX.AI is{" "}
+            Why Prompting.AI is{" "}
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
               Different
             </span>
@@ -19,7 +19,7 @@ const AboutSection: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-12 shadow-xl border border-gray-100">
             <p className="text-xl leading-relaxed text-gray-700 mb-8">
-              <span className="font-semibold text-gray-900">TrainingX.AI</span> is built on over a decade of{" "}
+              <span className="font-semibold text-gray-900">Prompting.AI</span> is built on over a decade of{" "}
               <span className="font-semibold text-blue-600">AI literacy</span> and{" "}
               <span className="font-semibold text-blue-600">real-world classroom experience</span>. In 2015, we launched{" "}
               <span className="font-semibold text-purple-600">Spiral Buddy</span>, achieving{" "}

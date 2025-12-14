@@ -11,11 +11,11 @@ const Footer: React.FC = () => {
             <div className="flex items-center gap-3 mb-4">
               <img
                 src="/logo.png"
-                alt="TrainingX.AI Logo"
+                alt="Prompting.AI Logo"
                 className="h-8 w-auto"
               />
               <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                TrainingX.AI
+                Prompting.AI
               </h3>
             </div>
             <p className="text-gray-400 leading-relaxed mb-6 max-w-md">
@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-sm text-gray-400">
                 <Mail className="h-4 w-4 text-blue-400" />
-                <span>support@trainingx.ai</span>
+                <span>support@Prompting.AI</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-gray-400">
                 <Phone className="h-4 w-4 text-blue-400" />
@@ -117,7 +117,7 @@ const Footer: React.FC = () => {
                 PromptToSuccess.AI
               </h3>
               <p className="text-gray-400 text-lg font-medium">
-                — Powered by <span className="text-white font-bold">TrainingX.AI</span>
+                — Powered by <span className="text-white font-bold">Prompting.AI</span>
               </p>
             </div>
           </div>
@@ -126,7 +126,7 @@ const Footer: React.FC = () => {
         {/* Copyright */}
         <div className="border-t border-gray-700 pt-8 text-center">
           <p className="text-sm text-gray-500">
-            © 2024 TrainingX.AI. All rights reserved. • Built with proven AI methodology since 2015.
+            © 2024 Prompting.AI. All rights reserved. • Built with proven AI methodology since 2015.
           </p>
         </div>
       </div>

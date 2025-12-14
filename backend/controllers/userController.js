@@ -52,13 +52,13 @@ exports.register = async (req, res) => {
       <p><strong>Email:</strong> ${email}</p>
       <p><strong>Temporary Password:</strong> ${generatedPassword}</p>
       <p>Thank you!</p>
-      <p>The TrainingX.AI Team</p>
+      <p>The Prompting.AI Team</p>
     `;
 
     try {
       await sendEmail({
         email: user.email,
-        subject: 'Your TrainingX.AI Club Account Credentials',
+        subject: 'Your Prompting.AI Club Account Credentials',
         message,
       });
       res.status(201).json({ message: 'Club user created and credentials sent to email', userId: user._id });

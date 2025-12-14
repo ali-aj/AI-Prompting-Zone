@@ -48,7 +48,7 @@ const FounderJourneySection: React.FC = () => {
     },
     {
       year: "2023-2024",
-      title: "TrainingX.AI Evolution",
+      title: "Prompting.AI Evolution",
       description: "Expanded beyond education to workforce development, bringing AI literacy to all learners.",
       icon: <Rocket className="w-6 h-6" />,
       color: "from-purple-400 to-pink-400",
@@ -100,7 +100,7 @@ const FounderJourneySection: React.FC = () => {
           </div>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
             From a classroom innovation to a global AI education platform — discover the decade-long journey that shaped
-            TrainingX.AI
+            Prompting.AI
           </p>
           
           <div className="flex justify-center mt-6">
@@ -120,7 +120,7 @@ const FounderJourneySection: React.FC = () => {
                   <div className="relative w-60 h-60 md:w-60 md:h-60">
                     <img
                       src="founder.jpeg"
-                      alt="Derrick O'Neal - TrainingX.AI Founder"
+                      alt="Ali Mustafa - Prompting.AI Founder"
                       className="rounded-full object-cover border-4 border-white shadow-xl w-full h-full"
                     />
                     <div className="absolute -bottom-2 -right-2 w-10 h-10 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center shadow-lg">
@@ -136,8 +136,8 @@ const FounderJourneySection: React.FC = () => {
                     weeks wasn't just a statistic — it was proof that AI could democratize education."
                   </blockquote>
                   <div className="text-left">
-                    <p className="font-bold text-slate-800">— Derrick O'Neal</p>
-                    <p className="text-sm text-slate-500">Founder & CEO, TrainingX.AI</p>
+                    <p className="font-bold text-slate-800">— Ali Mustafa</p>
+                    <p className="text-sm text-slate-500">Founder & CEO, Prompting.AI</p>
                     <p className="text-sm text-slate-500">Educator & AI Innovation Pioneer</p>
                   </div>
                 </div>
