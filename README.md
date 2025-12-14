@@ -1,0 +1,145 @@
+# Kids-Stem-Zone
+
+A full-stack web application designed to provide engaging STEM activities and resources for kids. The project is divided into a React + TypeScript frontend and a Node.js + Express backend.
+
+---
+
+## Table of Contents
+
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+  - [Backend Setup](#backend-setup)
+  - [Frontend Setup](#frontend-setup)
+- [Environment Variables](#environment-variables)
+- [Scripts](#scripts)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
+
+## Features
+
+- User authentication (students, admins, agents, clubs)
+- Dynamic prompts and chat with agents
+- Student progress tracking
+- Club and agent management
+- Email notifications
+- Responsive, modern UI
+
+---
+
+## Tech Stack
+
+**Frontend:**
+- React
+- TypeScript
+- Tailwind CSS
+- Vite
+
+**Backend:**
+- Node.js
+- Express
+- MongoDB (via Mongoose)
+- JWT Authentication
+
+---
+
+## Project Structure
+
+```
+Kids-Stem-Zone/
+  ├── backend/      # Express API, models, controllers, routes
+  └── frontend/     # React app, components, pages, assets
+```
+
+---
+
+## Getting Started
+
+### Backend Setup
+
+1. **Install dependencies:**
+   ```bash
+   cd backend
+   npm install
+   ```
+
+2. **Configure environment variables:**
+   - Create a `.env` file in the `backend` directory.
+   - Add your MongoDB URI, JWT secret, and email credentials.
+
+3. **Run the backend server:**
+   ```bash
+   nodemon server.js
+   ```
+   The backend will start on the port specified in your `.env` (default: 5000).
+
+---
+
+### Frontend Setup
+
+1. **Install dependencies:**
+   ```bash
+   cd frontend
+   npm install
+   ```
+
+2. **Run the frontend development server:**
+   ```bash
+   npm run dev
+   ```
+   The frontend will start on [http://localhost:8080](http://localhost:8080) by default.
+
+---
+
+## Environment Variables
+
+### Backend (`backend/.env`)
+
+```env
+PORT=5000
+
+MONGODB_URI=
+JWT_SECRET=
+
+OPENAI_API_KEY=
+OPENAI_MODEL=
+
+CLAUDE_API_KEY=
+CLAUDE_MODEL=
+
+GEMINI_API_KEY=
+GEMINI_MODEL=
+
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_USERNAME=
+EMAIL_PASSWORD=
+EMAIL_FROM=
+
+CLOUDINARY_CLOUD_NAME=
+CLOUDINARY_API_KEY=
+CLOUDINARY_API_SECRET=
+```
+
+### Frontend
+
+- If you need to use environment variables, create a `.env` file in the `frontend` directory and prefix variables with `VITE_`.
+
+---
+
+## Scripts
+
+### Backend
+
+- `nodemon server.js` — Start the server
+
+### Frontend
+
+- `npm run dev` — Start the Vite development server
+- `npm run build` — Build for production
+- `npm run preview` — Preview the production build
+
+---

@@ -1,0 +1,38 @@
+
+{
+  "glyphs": {},
+  "familyName": "Helvetiker",
+  "ascender": 1462,
+  "descender": -284,
+  "underlinePosition": -100,
+  "underlineThickness": 50,
+  "boundingBox": {
+    "yMin": -284,
+    "xMin": -111,
+    "yMax": 1462,
+    "xMax": 2305
+  },
+  "resolution": 1000,
+  "original_font_information": {
+    "format": 0,
+    "copyright": "Copyright (c) 2019 by FontShop",
+    "fontFamily": "Helvetiker",
+    "fontSubfamily": "Regular",
+    "uniqueID": "FontShop: Helvetiker Regular: 2019",
+    "fullName": "Helvetiker Regular",
+    "version": "Version 1.000",
+    "postScriptName": "Helvetiker-Regular",
+    "trademark": "",
+    "manufacturer": "FontShop",
+    "designer": "",
+    "description": "",
+    "manufacturerURL": "",
+    "designerURL": "",
+    "licence": "",
+    "licenceURL": "",
+    "preferredFamily": "",
+    "preferredSubfamily": "",
+    "compatibleFullName": "",
+    "sampleText": ""
+  }
+}
