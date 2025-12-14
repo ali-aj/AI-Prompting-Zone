@@ -114,10 +114,10 @@ const Footer: React.FC = () => {
           <div className="inline-block bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 p-[1px] rounded-2xl">
             <div className="bg-gray-900 rounded-2xl px-8 py-6">
               <h3 className="text-3xl md:text-4xl font-black bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-2">
-                PromptToSuccess.AI
+                Prompting.AI
               </h3>
               <p className="text-gray-400 text-lg font-medium">
-                — Powered by <span className="text-white font-bold">Prompting.AI</span>
+                — Powered by <span className="text-white font-bold">Zeigy Studios</span>
               </p>
             </div>
           </div>
